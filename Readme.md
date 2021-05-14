@@ -15,18 +15,18 @@ LDAP
 - Сделан Vagrantfile и ansible плейбуки, разворачивающие готовый стенд с FreeIPA с авторизацией по ssh ключам:
 
 - В профиле пользователя на сервере FreeIPA уже присутствует открытый ключ для возможности аутентификации на машинах домена по ключу (генерируется командой ```ssh-keygen -t rsa```)
- ![Image 1](https://raw.githubusercontent.com/MaximMiklyaev/30.LDAP/master/screenshots/freeipa.png)
+ ![Image 1](https://github.com/Konstantin0607/LDAP/blob/master/screenshots/freeipa.png)
 
  - Проверяем что все работает
- ![Image 2](https://raw.githubusercontent.com/MaximMiklyaev/30.LDAP/master/screenshots/ssh.png)
+ ![Image 2](https://github.com/Konstantin0607/LDAP/blob/master/screenshots/ssh.png)
 
  - Также сделаны настройки чтобы пользоваль мог выполнить команды от имени суперпользователя
- ![Image 3](https://raw.githubusercontent.com/MaximMiklyaev/30.LDAP/master/screenshots/sudo.png) 
+ ![Image 3](https://github.com/Konstantin0607/LDAP/blob/master/screenshots/sudo.png) 
 
 
 
 ## Как запустить:
- - git clone https://github.com/MaximMiklyaev/30.LDAP.git && cd 30.LDAP && vagrant up
+ - git clone https://github.com/Konstantin0607/LDAP.git && cd 30.LDAP && vagrant up
 
 ## Проверка работоспособности:
  - После выполнения vagrant up, необходимо в /etc/hosts на хосте добавить запись 192.168.50.10 server.test.local (это необходимо чтобы зайти на сервер через веб-интерфейс) 
